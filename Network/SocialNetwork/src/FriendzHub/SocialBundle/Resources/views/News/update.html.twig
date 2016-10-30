@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+
+<html> 
+   
+<head>
+<style type="text/css">
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+    font-size:100%
+}
+</style>
+<meta charset="UTF-8">
+ <title>Web Intersect Social Network Tutorials and Demo</title>
+ <link rel="icon" href="favicon.ico" type="image/x-icon" >
+ <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
+   <body> 
+   <div id="page">
+   <div id="pageTop">
+   		<div id="TopWrap">
+        	<div id="Logo">
+            	<a href="index.html"><img  src="{{ asset('images/logo.png') }}" alt="logo"></a>
+            </div>
+            <div id="Rest">
+            	<div id="D1">
+                 <a href="index.html"><img src="{{ asset('images/name.png') }}" alt="name"></a>  
+                		<div>
+                   			 <a href="#"> Sign up / Log In </a>
+                   		 </div>
+                           
+                </div>
+                <div id="D2">
+                	<div>
+                	<a href="index.html"><img src="{{ asset('images/home.png') }}" alt="logo"></a>
+                    <a href="#"> My Profile </a>
+                    <a href="#"> Contacts </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+   <div id="pageMiddle"> 
+ 		<div id="profPic">
+        	<a href="index.html"><img  src="{{ asset('images/pic.png') }}" alt="logo"></a>     
+
+          </div> 
+      <div id="section">
+        <ul style="list-style-type:disc">
+          <form action="{{path('friendz_hub_social_update',{'name':username})}}" method="POST">
+                  <li >First name :<br>
+                    <input type="text" name="firstname">
+                    <br>
+                  </li>
+                  <li>Last Name :<br>
+                    <input type="text" name="lastname">
+                    <br>  
+                  </li>
+                  <li>User Name : <br>
+                    <input type="text" name="username">
+                    <br>  
+                  </li>
+                  <li>Gender :   <br>
+                    <input type="text" name="gender">
+                    <br>    
+                  </li>
+
+                  <li>Password :   <br>
+                      <input type="text" name="password">
+                      <br>
+                  </li>
+
+                  <li>
+                     <input type="submit" value="Submit">
+                  </li>
+          </form>
+
+              </ul> 
+              
+
+              </div>
+    
+                </div>	
+   
+    
+     <div id="pageEnd"> 
+        <a href="index.html"><img  src="{{ asset('images/ytd.png') }}" alt="logo"></a>
+        <a href="index.html"><img  src="{{ asset('images/twd.png') }}" alt="logo"></a>
+        <a href="index.html"><img  src="{{ asset('images/ff.png') }}" alt="logo"></a>
+      </div> 
+  </div>
+</body> 
+ </html>

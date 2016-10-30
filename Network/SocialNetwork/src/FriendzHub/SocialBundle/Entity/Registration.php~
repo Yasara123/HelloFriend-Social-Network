@@ -1,0 +1,60 @@
+<?php
+
+namespace FriendzHub\SocialBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Registration
+ *
+ * @ORM\Table(name="registration", uniqueConstraints={@ORM\UniqueConstraint(name="Username", columns={"password"}), @ORM\UniqueConstraint(name="Password", columns={"first_name"}), @ORM\UniqueConstraint(name="Email", columns={"username"})})
+ * @ORM\Entity
+ */
+class Registration
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="username", type="string", length=50, nullable=false)
+     */
+    private $username;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=30, nullable=false)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first_name", type="string", length=30, nullable=false)
+     */
+    private $firstName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_name", type="string", length=20, nullable=false)
+     */
+    private $lastName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gender", type="string", length=10, nullable=false)
+     */
+    private $gender;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="user_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $userId;
+
+
+}

@@ -1,0 +1,7 @@
+friendz_hub_social:
+    resource: "@FriendzHubSocialBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation

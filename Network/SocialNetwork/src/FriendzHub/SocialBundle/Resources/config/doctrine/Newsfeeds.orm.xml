@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="FriendzHub\SocialBundle\Entity\Newsfeeds" table="newsfeeds">
+    <id name="newscount" type="integer" column="newsCount">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="newsitem" type="string" column="newsItem" length="255" nullable="true"/>
+    <field name="owner" type="string" column="Owner" length="30" nullable="false"/>
+    <field name="userid" type="integer" column="UserID" nullable="false"/>
+  </entity>
+</doctrine-mapping>

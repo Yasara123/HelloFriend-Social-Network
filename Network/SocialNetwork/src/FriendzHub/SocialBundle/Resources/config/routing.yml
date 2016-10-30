@@ -1,0 +1,37 @@
+friendz_hub_social_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: FriendzHubSocialBundle:Default:index }
+
+friendz_hub_social_News:
+    path:     /news
+    defaults: { _controller: FriendzHubSocialBundle:Default:homeNews }
+    
+friendz_hub_social_login:
+    path:     /login
+    defaults: { _controller: FriendzHubSocialBundle:Default:login }
+
+
+post:
+    path:     /post
+    defaults: { _controller: FriendzHubSocialBundle:Default:post }
+    
+friendz_hub_social_user:
+    path:     /user/{name}
+    defaults: { _controller: FriendzHubSocialBundle:Default:user }
+    
+friendz_hub_social_logout:
+    path:     /logout
+    defaults: { _controller: FriendzHubSocialBundle:Default:logout }
+
+friendz_hub_social_profile:
+    path:     /profile/{name}
+    defaults: { _controller: FriendzHubSocialBundle:Default:profile}
+    
+friendz_hub_social_update:
+    path:     /update/{name}
+    defaults: { _controller: FriendzHubSocialBundle:Default:update}
+    
+friendz_hub_social_reg:
+    path:     /reg
+    defaults: { _controller: FriendzHubSocialBundle:Default:reg }
+

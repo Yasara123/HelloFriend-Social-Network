@@ -1,0 +1,46 @@
+<?php
+
+namespace FriendzHub\SocialBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Newsfeeds
+ *
+ * @ORM\Table(name="newsfeeds")
+ * @ORM\Entity
+ */
+class Newsfeeds
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="newsItem", type="string", length=255, nullable=true)
+     */
+    private $newsitem;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="Owner", type="string", length=30, nullable=false)
+     */
+    private $owner;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="UserID", type="integer", nullable=false)
+     */
+    private $userid;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="newsCount", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $newscount;
+
+
+}

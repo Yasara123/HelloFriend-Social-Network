@@ -1,0 +1,4 @@
+services:
+#    friendz_hub_social.example:
+#        class: FriendzHub\SocialBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,152 @@
+ body { margin: 0px; font-family:"Times New Roman", Times, serif; font-size: 14px;}
+ #page{
+ 	background: url(asset('images/name.png') ) repeat-x;
+    background-color: #339999;
+	height: 1000px;	
+
+
+ }
+ #pageTop{
+	height: 138px;	
+	
+ }
+  #pageTop > #TopWrap {
+ 	width: 1000px;
+	margin: 0px auto;
+	border:#000000 1px dashed;
+	height:136px;	
+	
+ }
+ #pageTop > #TopWrap > #Logo {
+ 	float: left;
+	height:116px;	
+	width : 158px
+	
+ }
+ #pageTop > #TopWrap > #Rest {
+ 	float: left;
+	height:134px;	
+	width : 842px;
+	
+ }
+ #pageTop > #TopWrap > #Rest >#D1  {
+	height:78px;		
+ }
+ #pageTop > #TopWrap > #Rest >#D1 > div  {
+  	width : 600px;
+	float:right;
+	margin- top: 10px;
+	padding:4px;	
+	text-align:right;
+ }
+ #pageTop > #TopWrap > #Rest >#D1 > div > a  {
+	color:#333333;
+	text-decoration:none;	
+	font-size:20px;
+ }
+ #pageTop > #TopWrap > #Rest >#D1 > div > a:hover  {	
+	color:#990033;
+ }
+ #pageTop > #TopWrap > #Rest >#D2  {
+	height:56px;	
+	
+ }
+ #pageTop > #TopWrap > #Rest >#D2 > div  {
+	margin- top: 20px;
+	padding:4px;	
+ }
+ #pageTop > #TopWrap > #Rest >#D2 > div > a  {
+  	display:block;
+	float:left;
+	color:#333333;
+	text-decoration:none;	
+	margin: 0px 24px;
+	font-size:24px;
+ }
+ #pageTop > #TopWrap > #Rest >#D2 > div > a:hover  {	
+	color:#990033;
+ }
+ #pageMiddle {
+width: 1000px;
+margin: 0px auto;
+ height:300px;	
+ border:#000000 dashed;	
+ }
+ #pageMiddle > #profPic {
+ float:left;
+ height:250px;
+ width:196px;
+ border:#000000 dashed;	
+ }
+#pageMiddle textarea {
+ width: 60%;
+ height:10%;
+ float:right;
+ margin-right:30px;
+}
+ #pageMiddle > #status {
+ border:#000000;	
+ float:right;
+  height:250px;
+ width:790px;
+
+}
+#pageMiddle > #login {
+ border:#000000;	
+ float:none;
+  height:100px;
+ width:500px;
+    padding: 30px;
+    margin-left: 280px;
+
+}
+#pageMiddle > #reg {
+ border:#000000;	
+ float:none;
+  height:300px;
+ width:500px;
+    margin-left: 280px;
+
+}
+ #status input[type=text] {
+margin-top: 40px;
+ width: 90%;
+ height:100px;
+ float:right;
+ margin-right:30px;
+
+}
+#status input {
+ float:right;
+ font-size:18px;
+ margin-right:30px;
+
+}
+
+ #pageBottom {
+ width: 1000px;
+ margin: 0px auto;
+ height:300px;	
+ border:#000000 dashed;	
+ }
+#pageBottom textarea {
+margin-top:30px;
+ width: 75%;
+ height:200px;
+margin-left:220px;
+font-size: 16px;
+font-family: monospace;
+font-style: oblique;
+}
+ #pageEnd {
+ width: 1000px;
+margin: 0px auto;
+ height:70px;	
+ border:#000000 dashed;	
+     
+ }
+#pageEnd img{
+    float: right;
+    padding: 15px;
+}
+ }

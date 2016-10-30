@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+
+<html> 
+   
+<head> 
+    
+<meta charset="UTF-8">
+ <link rel="icon" href="favicon.ico" type="image/x-icon" >
+ <link rel="stylesheet" href="{{ asset('css/style.css') }}" >
+   <body> 
+   <div id="page">
+   <div id="pageTop">
+   		<div id="TopWrap">
+        	<div id="Logo">
+            	<a href="index.html"><img  src="{{ asset('images/logo.png') }}" alt="logo"></a>
+            </div>
+            <div id="Rest">
+            	<div id="D1">
+                 <a href="index.html"><img src="{{ asset('images/name.png') }}" alt="name"></a>  
+                		<div>
+                   			  <a href="{{ path('friendz_hub_social_reg') }}">Sign up</a>
+                             <a href="{{ path('friendz_hub_social_login') }}">Log In </a>
+                   		 </div>
+                           
+                </div>
+                <div id="D2">
+                	<div>
+                	<a href="{{ path('friendz_hub_social_News') }}"><img src="{{ asset('images/home.png') }}" alt="logo"></a>
+                    <a href="{{ path('friendz_hub_social_profil') }}"> My Profile </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+   <div id="pageMiddle"> 
+ 		<div id="profPic">
+        	<a href="index.html"><img  src="{{ asset('images/pic.png') }}" alt="logo"></a>            
+        </div> 
+        	<div id="status">
+ 			    <form action="{{ url('post') }}" method="post">      
+                    <input type="text" name="status"><br>
+			         <input type="submit" value="post"/>
+			 </form >
+               
+			</div>
+        </div>	
+   
+    
+  	<div id="pageBottom"> 
+    		<form action="/html/tags/html_form_tag_action.cfm" method="post">
+			<textarea name="comments" id="comments">
+        News Feeds
+        {% for Newsfeeds in Newsfeedss %}
+     - {{ Newsfeeds.owner}} is updated status as: {{ Newsfeeds.newsitem }}
+        {% endfor %}
+                
+			</textarea> <br />
+            <br>
+    </div> 
+    <div id="pageEnd"> 
+         <a href="https://www.youtube.com/"><img  src="{{ asset('images/ytd.png') }}" alt="logo"></a>
+        <a href="https://twitter.com/?lang=en"><img  src="{{ asset('images/twd.png') }}" alt="logo"></a>
+        <a href="https://www.facebook.com/"><img  src="{{ asset('images/ff.png') }}" alt="logo"></a>
+        </div> 
+  </div>
+ </body> 
+ </html>
